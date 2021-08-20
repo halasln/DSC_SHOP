@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "687680963213",
+    "project_id": "dsc-shop-9e5c5",
+    "storage_bucket": "dsc-shop-9e5c5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:687680963213:android:37c574e8336aa3702bd8c4",
+        "android_client_info": {
+          "package_name": "com.meafia.dsc_shop"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "687680963213-9hmbpq2n479a170agvhjlohtfqh0ornk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCWQYSmoTDebO0pCZnOM8X2loYG35OjOoU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "687680963213-9hmbpq2n479a170agvhjlohtfqh0ornk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
