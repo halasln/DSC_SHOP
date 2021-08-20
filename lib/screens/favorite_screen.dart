@@ -20,7 +20,7 @@ class FavoritScreen extends StatelessWidget {
               itemCount: favoriteModel.favoriteCount,
               itemBuilder: (context, index) {
                 int id = favoriteModel.favoriteProducts[index];
-                // Product product = pro.allProducts.elementAt(id - 1);
+
                 return Consumer<Products>(
                   builder: (context, pro, child) {
                     return InkWell(

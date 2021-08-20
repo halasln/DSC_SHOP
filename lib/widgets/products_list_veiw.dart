@@ -208,8 +208,6 @@ class ProductsListView extends StatelessWidget {
                                                           BorderRadius.circular(
                                                               6),
                                                     ),
-                                                    // side: BorderSide(
-                                                    //     width: 2, color: Colors.grey),
                                                   ),
                                                 ),
                                         ),

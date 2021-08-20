@@ -125,9 +125,10 @@ class _RegisterScreenState extends State<RegisterScreen> {
                               hintText: "enter your email",
                               labelText: "E-mail",
                               labelStyle: TextStyle(color: Colors.grey),
-                              prefixIcon: Icon(Icons.email,
-                                  // color: Color(0xfffbabb1),
-                                  color: Color(0xff040316)),
+                              prefixIcon: Icon(
+                                Icons.email,
+                                color: Color(0xff040316),
+                              ),
                             ),
                           ),
                           SizedBox(
@@ -199,12 +200,13 @@ class _RegisterScreenState extends State<RegisterScreen> {
                                     .updateUserFavorite({'user favorite': []});
                                 await database
                                     .updateProductsQuantity({'quantity': []});
-                              } catch (e) {
+                              } on FirebaseAuthException catch (e) {
+                                print(e.message);
                                 print(e);
                                 showDialog(
                                     context: context,
                                     builder: (context) => AlertDialog(
-                                          content: Text('$e'),
+                                          content: Text(e.message.toString()),
                                         ));
                                 return null;
                               }

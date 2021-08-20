@@ -90,7 +90,6 @@ class _LoginScreenState extends State<LoginScreen> {
                               labelStyle: TextStyle(color: Colors.grey),
                               prefixIcon: Icon(
                                 Icons.email,
-                                // color: Color(0xfffbabb1),
                                 color: Color(0xff040316),
                               ),
                             ),
@@ -158,12 +157,12 @@ class _LoginScreenState extends State<LoginScreen> {
                               try {
                                 await auth.signInWithEmailAndPassword(
                                     email: _email, password: _password);
-                              } catch (e) {
-                                print(e);
+                              } on FirebaseAuthException catch (e) {
+                                print(e.message);
                                 showDialog(
                                     context: context,
                                     builder: (context) => AlertDialog(
-                                          content: Text('$e'),
+                                          content: Text(e.message.toString()),
                                         ));
                                 return null;
                               }

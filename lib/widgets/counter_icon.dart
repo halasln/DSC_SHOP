@@ -14,7 +14,6 @@ class CounterIcon extends StatelessWidget {
         count == 0
             ? SizedBox()
             : Positioned(
-                // draw a red marble
                 top: -5.0,
                 right: -5.0,
                 child: Stack(
